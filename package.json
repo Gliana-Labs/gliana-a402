@@ -1,0 +1,17 @@
+{
+  "name": "gliana-a402",
+  "version": "1.0.0",
+  "private": false,
+  "description": "x402 on Algorand — the AVM payment rail behind GlianaAI, settled through the GoPlausible facilitator",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "pay": "node scripts/a402-pay.mjs",
+    "check-payto": "node scripts/a402-mainnet-check.mjs"
+  },
+  "dependencies": {
+    "@x402/avm": "^0.2.0",
+    "@algorandfoundation/algokit-utils": "^9.0.0"
+  },
+  "keywords": ["x402", "algorand", "avm", "usdc", "ai", "agents", "x402-global-challenge"]
+}
