@@ -1,0 +1,51 @@
+1
+00:00:00,700 --> 00:00:05,500
+Gliana AI Pay per result, over x402 on Algorand.
+
+2
+00:00:10,000 --> 00:00:24,480
+Every generative AI provider sells by the month, to people with accounts. That suits a daily user. It fits no software agent at all, because an agent cannot fill in a signup form or hold a card on file.
+
+3
+00:00:27,680 --> 00:00:39,680
+So we removed the account. You ask for one model run, with no key and no signup, and the answer is a 402 that names its own price.
+
+4
+00:00:42,880 --> 00:00:55,200
+The challenge is the price list. The exact amount, the asset, and the address it goes to, all quoted before anything runs. This one costs a tenth of a cent in USDC
+
+5
+00:00:58,400 --> 00:01:14,480
+It is gasless on purpose. The facilitator's fee payer funds the group, so the buyer holds USDC and needs no ALGO at all. That is what lets an agent carry a single asset and still transact.
+
+6
+00:01:17,680 --> 00:01:24,560
+Paying is one command. The client signs an asset transfer group and retries the request.
+
+7
+00:01:27,760 --> 00:01:36,000
+Settlement confirms first, and only then is the output released. A settle failure never gives the result away for free.
+
+8
+00:01:39,200 --> 00:01:49,360
+Here it is on MainNet. A real USDC transfer to the payTo address, and look at the fee: zero, paid by the facilitator.
+
+9
+00:01:52,560 --> 00:02:01,600
+The money moved by exactly the quoted amount. One thousand micro USDC In, one tenth of a cent.
+
+10
+00:02:04,800 --> 00:02:17,760
+We build the payment requirements, never the buyer. The facilitator decodes the signed group against our amount and our payTo, so a buyer cannot quote themselves a cheaper price or redirect the payment.
+
+11
+00:02:20,960 --> 00:02:30,160
+And we validate before charging. A request that cannot succeed is refused at the 402, not charged and then failed.
+
+12
+00:02:33,360 --> 00:02:45,200
+Forty-seven resources share one payTo. Image, video, music, speech, chat, and fifty utility tools, every one priced per call on Algorand MainNet.
+
+13
+00:02:48,400 --> 00:02:53,360
+It is live now. The code is public, and so is every endpoint.
